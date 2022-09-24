@@ -1,0 +1,45 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  #topright {
+      float: right;
+      color: white;
+      font-size: 10px;
+  }
+  body {
+      background-color: lightblue;
+  }
+  .box {
+    text-align: center;
+    border: 3px solid rgb(250, 191, 168);
+    margin-bottom: 3%;
+    box-shadow: 5px 10px darkcyan;
+  }
+  p {
+      font-size: 17px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  table, th, td {
+    border:1px solid black;
+  }
