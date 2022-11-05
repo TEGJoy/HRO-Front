@@ -1,4 +1,42 @@
-ul {
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100vw;
+  }
+}
+@media only screen and (min-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: center;
+    width:100vw;
+  }
+}
+nav a {
+  flex: 1;
+  height: 45px;
+  text-align: center;
+  background-color: rgb(23, 54, 65);
+  border: 1px solid darkblue;
+}
+nav a:hover {
+  background-color: darkblue;
+  color: white;
+}
+nav #logo {
+  flex: 2;
+  align-items: center;
+  color: white;
+  background-color:rgb(23, 54, 65);
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  width=100%;
+}
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -17,7 +55,7 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
   }
-  
+*/
   /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #111;
@@ -28,14 +66,28 @@ ul {
       font-size: 10px;
   }
   body {
-      background-color: lightblue;
+      background-color: #06171Eff;
   }
   .box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+    border: 3px solid rgb(250, 191, 168);
+    
+  } 
+  /*{
+    display: flex;
     text-align: center;
     border: 3px solid rgb(250, 191, 168);
     margin-bottom: 3%;
     box-shadow: 5px 10px darkcyan;
-  }
+  } */
+  p, h1, h2 {
+    color: #E0E4E6ff;
+}
   p {
       font-size: 17px;
       font-family: Arial, Helvetica, sans-serif;
@@ -43,3 +95,53 @@ ul {
   table, th, td {
     border:1px solid black;
   }
+
+  main {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .form {
+    display: flex;
+    justify-content: space-between;
+    color: violet;
+    margin: 5px 0;
+  }
+  label, input, select{
+    flex: 1;
+    padding: 5px;
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  header {  
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+
+ .hero-image{
+  text-align:center;
+  height:40vh;
+  line-height:40vh;
+  font-size:2em;
+  font-weight:bolder;
+  color:white;
+  background-image: url(pics/deemo.jpg);
+  background-size:cover;
+  background-position:center;
+ }
+
+  /*
+  example of flex-boxing
+  nav {
+  display: flex
+  flex-direction: column; //als column
+  flex-direction: row;  //Als row
+  align
+  
