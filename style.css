@@ -313,7 +313,7 @@ html, body {
 /* Container for skill bars */
 
 .container {
-	width: 100%;
+	width: 98.9vw;
 	/* Full width */
 	background-color: #ddd;
 	/* Grey background */
@@ -327,25 +327,25 @@ html, body {
 	/* White text color */
 }
 .html {
-	width: 80%;
+	width: 80vw;
 	background-color: #04AA6D;
 }
 /* Green */
 
 .css {
-	width: 65%;
+	width: 65vw;
 	background-color: #2196F3;
 }
 /* Blue */
 
 .js {
-	width: 80%;
+	width: 80vw;
 	background-color: #f44336;
 }
 /* Red */
 
 .php {
-	width: 90%;
+	width: 90vw;
 	background-color: #808080;
 }
 /* Dark Grey */
