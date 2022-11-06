@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Contact</title>
 </head>
-<body>
+<body class="contact">
     <header>
         <nav>
             <a href="index.html">Home</a>
@@ -19,25 +19,43 @@
             <a id="logo"><i>The great ace portfolio!</i></a>
           </nav>
     </header>
-    <main>
-        <h1>Contacto</h1>
-        <form action="contact-bedankt.html" method="post">
+ 
+    <main class="main-form">
+        <h1>Please fill this contact form</h1>
+        <form action="contact-bedankt.html" method="POST">
             <div class="form">
-                <label for="name">Test #1</label>
-                <input id="name" type="text" name="name" placeholder="WOAHHHH" required></input> 
+                <label for="name">Naam:</label>
+                <input id="name" type="text" name="name" placeholder="Zet hier uw naam neer" required  pattern="\S+.*"></input> 
             </div>
             <div class="form">
-                <label for="checkbox">Test #2</label>
-                <input id="checkbox" type="checkbox" name="accept" required></input> 
+                <label for="city">Woonplaats:</label>
+                <input id="city" type="text" name="city" placeholder="Zet hier uw woonplaats neer" required  pattern="\S+.*"></input> 
             </div>
             <div class="form">
-                <label for="anime">Test #3</label>
-                <select id="anime" name="anime">
-                    <option id="Josee" value="Josee">Josee, The Tiger and the Fish</option>
+                <label for="email">Email:</label>
+                <input id="email" type="text" name="email" placeholder="Zet hier uw mail neer" required  pattern="\S+.*"></input>
+            </div>
+            <div class="form">
+                <label for="date">Datum:</label>
+                <input id="date" type="date" name="date"></input>
+            </div>
+            <h1>Onderwerp</h1>
+            <div class="form">
+                <label for="subject-picker">Onderwerp</label>
+                <select id="category" name="category">
+                    <option id="Josee" value="Favoriete_serie?">Favoriete serie?</option>
                     <option id="ASV"   value="ASV">A silent Voice</option>
                     <option id="night" value="night">The night is short, walk on girl</option>
                     <option id="penguin" value="penguin">Penguin Highway</option>
                 </select>
+            </div>
+            <div class="form">
+                <label for="question">Mijn vraag:</label>
+                <textarea id="question" name="question" rows="4" cols="50" required pattern="\S+.*"> </textarea>
+            </div>
+            <div class="form">
+                <label>Selecteer een image:</label>
+                <input type="file" id="myFile" name="filename">
             </div>
             <div class="form">
                 <button type="submit">submit</button>
