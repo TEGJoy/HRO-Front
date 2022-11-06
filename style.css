@@ -3,8 +3,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		align-items: center;
 		width: 100vw;
+		height: 20vh;
 	}
 }
 @media only screen and (min-width: 600px) {
